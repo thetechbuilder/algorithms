@@ -66,7 +66,7 @@ def find_shortest_path(node_buckets, search_value):
                         #then the current shortest path:
                         shortest_path = lvl + 1
                     elif (lvl + 1) < shortest_path:
-                        #don't search further then an existing shortest path
+                        #don't search further than an existing shortest path
                         visited.add(adj_node)
                         queue.append((adj_node, lvl + 1))
         visited.clear()
